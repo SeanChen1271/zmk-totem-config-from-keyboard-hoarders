@@ -75,16 +75,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E         &kp R        &kp T          &kp Y            &kp U        &kp I        &kp O    &kp P
-              &kp A  &kp S  &mt LCTRL D   &mt LSHFT F  &kp G          &kp H            &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMICOLON
-&kp QUESTION  &kp Z  &kp X  &kp C         &kp V        &kp B          &kp N            &kp M        &kp COMMA    &kp DOT  &kp SLASH      &kp SINGLE_QUOTE
-                            &kp LEFT_GUI  &kp ESCAPE   &lt 1 SPACE    &lt 2 BACKSPACE  &kp TAB      &kp ENTER
+              &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y          &kp U        &kp I        &kp O    &kp P
+              &kp A  &kp S  &mt LCTRL D   &mt LSHFT F   &kp G        &kp H          &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMICOLON
+&kp QUESTION  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N          &kp M        &kp COMMA    &kp DOT  &kp SLASH      &kp SINGLE_QUOTE
+                            &kp LEFT_GUI  &lt 1 ESCAPE  &kp SPACE    &kp BACKSPACE  &lt 2 TAB    &kp ENTER
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        layer_left {
+        LAYER_LEFT {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "Left";
@@ -101,16 +101,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &trans  &trans  &trans  &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-            &trans  &trans  &trans  &kp GREATER_THAN  &kp LBKT                &kp RBKT               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&caps_word  &trans  &trans  &trans  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp SLASH
-                            &trans  &trans            &trans                  &kp EQUAL              &kp KP_N0     &kp PERIOD
+            &trans  &trans  &kp LC(C)  &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7     &kp N8      &kp N9  &kp KP_PLUS
+            &trans  &trans  &kp LC(X)  &kp GREATER_THAN  &kp LBKT                &kp RBKT               &kp N4     &kp N5      &kp N6  &kp KP_MINUS
+&caps_word  &trans  &trans  &kp LC(V)  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1     &kp N2      &kp N3  &kp KP_MULTIPLY  &kp SLASH
+                            &trans     &trans            &trans                  &kp EQUAL              &kp KP_N0  &kp PERIOD
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        Layer_Right {
+        LAYER_RIGHT {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "Right";
@@ -130,16 +130,16 @@
         &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET      &kp HOME        &kp UP     &kp END    &trans
         &trans    &trans  &trans    &trans    &trans       &kp AMPERSAND  &kp LEFT        &kp DOWN   &kp RIGHT  &kp COLON
 &trans  &trans    &trans  &trans    &trans    &trans       &kp ASTERISK   &kp UNDERSCORE  &kp GRAVE  &kp TILDE  &kp BSLH   &kp DOUBLE_QUOTES
-                          &trans    &trans    &mo ADJ      &trans         &trans          &trans
+                          &trans    &mo 3     &trans       &trans         &trans          &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        adjust_layer {
+        THIRD_LAYER {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "ADJ";
+            label = "Third";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -153,10 +153,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+                &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&studio_unlock  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
