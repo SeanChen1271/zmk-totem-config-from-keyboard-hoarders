@@ -31,7 +31,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
     };
@@ -75,10 +75,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y          &kp U        &kp I        &kp O    &kp P
-              &kp A  &kp S  &mt LCTRL D   &mt LSHFT F   &kp G        &kp H          &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMICOLON
-&kp QUESTION  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N          &kp M        &kp COMMA    &kp DOT  &kp SLASH      &kp SINGLE_QUOTE
-                            &kp LEFT_GUI  &lt 1 ESCAPE  &kp SPACE    &kp BACKSPACE  &lt 2 TAB    &kp ENTER
+              &kp Q  &kp W  &kp E         &kp R           &kp T        &kp Y          &kp U        &kp I        &kp O    &kp P
+              &kp A  &kp S  &mt LCTRL D   &mt LSHFT F     &kp G        &kp H          &mt RSHFT J  &mt RCTRL K  &kp L    &kp SEMICOLON
+&kp QUESTION  &kp Z  &kp X  &kp C         &kp V           &kp B        &kp N          &kp M        &kp COMMA    &kp DOT  &kp SLASH      &kp SINGLE_QUOTE
+                            &kp LEFT_GUI  &lt 1 CAPSLOCK  &kp SPACE    &kp BACKSPACE  &lt 2 TAB    &kp ENTER
             >;
         };
 
@@ -103,8 +103,8 @@
             bindings = <
             &trans  &trans  &kp LC(C)  &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7     &kp N8      &kp N9  &kp KP_PLUS
             &trans  &trans  &kp LC(X)  &kp GREATER_THAN  &kp LBKT                &kp RBKT               &kp N4     &kp N5      &kp N6  &kp KP_MINUS
-&caps_word  &trans  &trans  &kp LC(V)  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1     &kp N2      &kp N3  &kp KP_MULTIPLY  &kp SLASH
-                            &trans     &trans            &trans                  &kp EQUAL              &kp KP_N0  &kp PERIOD
+&caps_word  &trans  &trans  &kp LC(V)  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1     &kp N2      &kp N3  &kp KP_MULTIPLY  &kp EQUAL
+                            &trans     &trans            &trans                  &kp BACKSPACE          &kp KP_N0  &kp PERIOD
             >;
         };
 
