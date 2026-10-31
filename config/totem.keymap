@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -34,26 +35,54 @@
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
 
         combo_ctl_c {
             bindings = <&kp LC(C)>;
             key-positions = <3 4>;
+            layers = <0>;
         };
 
         combo_ctl_x {
             bindings = <&kp LC(X)>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         combo_ctl_v {
             bindings = <&kp LC(V)>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
-        combo_numpad_equal {
-            bindings = <&kp KP_EQUAL>;
+        cb_numpad_equal {
+            bindings = <&kp EQUAL>;
             key-positions = <27 28>;
+            layers = <1>;
+        };
+
+        cb_numpad_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        cb_numpad_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        cb_numpad_multiply {
+            bindings = <&kp ASTERISK>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        cb_numpad_divide {
+            bindings = <&kp SLASH>;
+            key-positions = <17 18>;
             layers = <1>;
         };
     };
@@ -123,10 +152,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &trans  &trans  &trans  &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7     &kp N8      &kp N9  &kp KP_PLUS
-            &trans  &trans  &trans  &kp GREATER_THAN  &kp LBKT                &kp RBKT               &kp N4     &kp N5      &kp N6  &kp KP_MINUS
-&caps_word  &trans  &trans  &trans  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1     &kp N2      &kp N3  &kp KP_MULTIPLY  &kp SLASH
-                            &trans  &trans            &trans                  &kp BACKSPACE          &kp KP_N0  &kp PERIOD
+        &trans  &trans  &trans  &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7     &kp N8      &kp N9  &kp KP_PLUS
+        &trans  &trans  &trans  &kp GREATER_THAN  &kp LBKT                &kp RBKT               &kp N4     &kp N5      &kp N6  &kp KP_MINUS
+&trans  &trans  &trans  &trans  &trans            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1     &kp N2      &kp N3  &kp KP_MULTIPLY  &kp SLASH
+                        &trans  &trans            &trans                  &kp BACKSPACE          &kp KP_N0  &kp PERIOD
             >;
         };
 
@@ -175,10 +204,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-                &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&studio_unlock  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+                &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+                &trans          &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&studio_unlock  &trans          &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
